@@ -36,7 +36,7 @@ function Instruction() {
 
       <ul className={styles.main__list}>
         {instructions.map((instruction, idx) => (
-          <li className={styles.main__listItem}>
+          <li key={idx} className={styles.main__listItem}>
             <strong className={classNames(styles.main__listNumber)}>
               {idx + 1}.
             </strong>

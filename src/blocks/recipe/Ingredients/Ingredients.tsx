@@ -17,7 +17,7 @@ function Ingredients() {
       <h2 className={styles.main__title}>Ingredients</h2>
       <ul className={styles.main__list}>
         {ingredient.map((item) => (
-          <li className={styles.main__listItem}>
+          <li key={item} className={styles.main__listItem}>
             <span
               className={classNames(pageStyle.main__dot, styles.main__listDot)}
             />
