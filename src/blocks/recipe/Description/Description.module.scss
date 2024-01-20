@@ -1,0 +1,77 @@
+@use "@/styles/vars.scss";
+
+.main {
+  margin-top: 40px;
+
+  @media #{vars.$narrow} {
+    margin-top: 0;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-family: vars.$font-young-serif;
+    margin-bottom: 24px;
+    line-height: 40px;
+    color: vars.$recipe-dark-charcoal;
+
+    @media #{vars.$narrow} {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    font-family: vars.$font-outfit;
+    line-height: 24px;
+    margin-bottom: 32px;
+    color: vars.$recipe-wenge-brown;
+  }
+
+  &__preparation {
+    background-color: vars.$recipe-rose-white;
+    padding: 28px;
+    border-radius: 12px;
+    font-family: vars.$font-outfit;
+    margin-bottom: 32px;
+
+    @media #{vars.$narrow} {
+      padding: 24px;
+    }
+
+    &Dot {
+      background-color: vars.$recipe-dark-raspberry;
+      margin-left: 8px;
+    }
+
+    &Title {
+      color: vars.$recipe-dark-raspberry;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+
+    &List {
+      list-style: none;
+
+      &Item {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+        margin-bottom: 8px;
+
+        @media #{vars.$narrow} {
+          gap: 22px;
+        }
+
+        &Text {
+          font-size: 16px;
+          font-style: normal;
+          color: vars.$recipe-wenge-brown;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use "@/styles/vars.scss";
+
+.main {
+  margin-bottom: 32px;
+
+  &__title {
+    font-family: vars.$font-young-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    color: vars.$recipe-brandy-red;
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    list-style: none;
+    font-family: vars.$font-outfit;
+
+    &Dot {
+      background-color: vars.$recipe-brandy-red;
+      margin-left: 8px;
+    }
+
+    &Item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 8px;
+
+      @media #{vars.$narrow} {
+        gap: 22px;
+      }
+
+      &Text {
+        font-size: 16px;
+        font-style: normal;
+        color: vars.$recipe-wenge-brown;
+        line-height: 24px;
+      }
+    }
+  }
+}

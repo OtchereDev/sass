@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
+
+$width-threshold: 1023px;
+$narrow: "(max-width: #{$width-threshold})";
+$wide: "(min-width: #{$width-threshold + 1})";
+
+$font-outfit: "Outfit", sans-serif;
+$font-young-serif: "Young Serif", serif;
+
+$color-white: hsl(0, 0%, 100%);
+$recipe-rose-white: hsl(330, 100%, 98%);
+$recipe-eggshell: hsl(30, 54%, 90%);
+$recipe-light-grey: hsl(30, 18%, 87%);
+$recipe-wenge-brown: hsl(30, 10%, 34%);
+$recipe-dark-charcoal: hsl(24, 5%, 18%);
+$recipe-dark-raspberry: #7a284e;
+$recipe-brandy-red: #854632;

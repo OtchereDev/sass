@@ -1,0 +1,7 @@
+@use "@/styles/vars.scss";
+
+.main {
+  width: 100%;
+  height: 1px;
+  background-color: vars.$recipe-light-grey;
+}

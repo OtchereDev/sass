@@ -1,0 +1,58 @@
+@use "@/styles/vars.scss";
+
+.main {
+  margin-top: 32px;
+
+  &__title {
+    font-family: vars.$font-young-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    color: vars.$recipe-brandy-red;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    font-family: vars.$font-outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__table {
+    width: 100%;
+    margin-top: 12px;
+    font-family: vars.$font-outfit;
+    border-collapse: collapse;
+
+    &Body {
+      width: 100%;
+    }
+
+    &Row {
+      border-bottom: solid 1px vars.$recipe-light-grey;
+
+      &_noBorder {
+        border-bottom: none;
+      }
+    }
+
+    &Data {
+      &First {
+        padding: 12px 32px;
+        color: vars.$recipe-wenge-brown;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &Second {
+        padding: 12px 32px 16px 12px;
+        color: vars.$recipe-brandy-red;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

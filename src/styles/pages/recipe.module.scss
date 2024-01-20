@@ -1,0 +1,37 @@
+@use "@/styles/vars.scss";
+
+.main {
+  background-color: #f3e5d7;
+  min-height: 100vh;
+  padding: 80px 0;
+
+  @media #{vars.$narrow} {
+    padding: 0;
+  }
+
+  &__body {
+    background-color: #fff;
+    max-width: 736px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 24px;
+
+    @media #{vars.$narrow} {
+      border-radius: 0;
+      padding: 0;
+    }
+
+    &Content {
+      @media #{vars.$narrow} {
+        padding: 40px 32px;
+      }
+    }
+  }
+
+  &__dot {
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 50%;
+  }
+}
