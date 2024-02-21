@@ -1,0 +1,9 @@
+@use "@/styles/vars.scss";
+
+.main {
+  font-family: vars.$font-inter;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  min-height: 100vh;
+}

@@ -1,0 +1,307 @@
+@use "@/styles/vars.scss";
+
+.main {
+  &__bg {
+    width: 978px;
+    height: 737px;
+    max-width: 70%;
+    background: linear-gradient(
+      290deg,
+      #d6e6fe 0%,
+      rgba(214, 252, 254, 0) 100%
+    );
+    border-radius: 0px 0px 35px 35px;
+    position: absolute;
+    top: 0;
+    left: 24px;
+
+    @media #{vars.$narrow} {
+      max-width: 100%;
+      left: 0;
+      height: 640px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 28px;
+    width: 64px;
+    height: 64px;
+
+    @media #{vars.$narrow} {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 140px;
+    padding-top: 75px;
+
+    @media #{vars.$narrow} {
+      padding-top: 32px;
+      margin: 0 24px 0px 24px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    @media #{vars.$narrow} {
+      flex-direction: column;
+    }
+
+    &TextSection {
+      width: 546px;
+
+      @media #{vars.$narrow} {
+        width: 100%;
+      }
+
+      h1 {
+        color: vars.$bmi-gunmetal;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 110%; /* 70.4px */
+        letter-spacing: -3.2px;
+        margin-bottom: 35px;
+
+        @media #{vars.$narrow} {
+          font-size: 48px;
+          font-style: normal;
+          letter-spacing: -2.4px;
+          text-align: center;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        max-width: 456px;
+        color: vars.$bmi-gunmetal;
+
+        @media #{vars.$narrow} {
+          font-size: 16px;
+          text-align: center;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &__calculator {
+    max-width: 564px;
+    padding: 32px;
+    background: #fff;
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+
+    @media #{vars.$narrow} {
+      max-width: 100%;
+      padding: 24px;
+    }
+
+    &Title {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -1.2px;
+      color: vars.$bmi-gunmetal;
+      margin-bottom: 32px;
+
+      @media #{vars.$narrow} {
+        margin-bottom: 24px;
+      }
+    }
+
+    &Options {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 32px;
+
+      @media #{vars.$narrow} {
+        margin-bottom: 24px;
+      }
+    }
+
+    &Radio {
+      width: 31px;
+      height: 31px;
+      border: solid 1px vars.$bmi-border;
+      border-radius: 50%;
+
+      &:hover {
+        border-color: vars.$bmi-blue;
+        cursor: pointer;
+      }
+
+      &_selected {
+        background-color: rgba(vars.$bmi-blue, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: transparent;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+          background-color: vars.$bmi-blue;
+        }
+      }
+
+      &Item {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+
+        p {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%; /* 24px */
+          color: vars.$bmi-gunmetal;
+        }
+      }
+    }
+
+    &Form {
+      margin-bottom: 32px;
+
+      @media #{vars.$narrow} {
+        margin-bottom: 24px;
+      }
+
+      &Label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+        color: vars.$bmi-dark-electri-blue;
+        margin-bottom: 8px;
+        display: inline-block;
+      }
+
+      &Row {
+        display: flex;
+        gap: 24px;
+
+        &Section {
+          width: 100%;
+        }
+
+        &Metric {
+          @media #{vars.$narrow} {
+            flex-direction: column;
+            gap: 16px;
+          }
+        }
+      }
+
+      &Input {
+        border: solid 1px vars.$bmi-border;
+        border-radius: 12px;
+        display: flex;
+        padding: 20px 24px;
+        align-items: center;
+        gap: 24px;
+
+        input {
+          border: none;
+          font-size: 24px;
+          color: vars.$bmi-gunmetal;
+          font-weight: 600;
+          outline: none;
+          width: 100%;
+        }
+
+        p {
+          color: vars.$bmi-blue;
+          font-size: 24px;
+          font-weight: 600;
+          letter-spacing: -1.2px;
+        }
+      }
+    }
+
+    &Result {
+      padding: 32px;
+      border-radius: 100px 999px 999px 100px;
+      background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      @media #{vars.$narrow} {
+        border-radius: 16px;
+        flex-direction: column;
+      }
+
+      &Score {
+        width: 206px;
+
+        @media #{vars.$narrow} {
+          width: 100%;
+        }
+
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 150%; /* 24px */
+          margin-bottom: 8px;
+        }
+
+        h3 {
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 110%; /* 70.4px */
+          letter-spacing: -3.2px;
+
+          @media #{vars.$narrow} {
+            font-size: 48px;
+          }
+        }
+      }
+
+      &Description {
+        max-width: 206px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+
+        @media #{vars.$narrow} {
+          max-width: 100%;
+        }
+      }
+
+      &Welcome {
+        h4 {
+          font-size: 24px;
+          font-weight: 600;
+          letter-spacing: -1.2px;
+          margin-bottom: 16px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 150%; /* 21px */
+        }
+      }
+    }
+
+    &Seperator {
+      margin-top: 24px;
+    }
+  }
+}

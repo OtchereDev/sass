@@ -1,0 +1,56 @@
+@use "@/styles/vars.scss";
+
+.main {
+  margin: 0 140px;
+  padding-top: 65px;
+  display: flex;
+  gap: 131px;
+  align-items: flex-end;
+
+  @media #{vars.$narrow} {
+    padding-top: 72px;
+    flex-direction: column;
+    margin: 0;
+    gap: 48px;
+  }
+
+  img {
+    width: 564px;
+
+    @media #{vars.$narrow} {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    @media #{vars.$narrow} {
+      padding: 0 24px;
+    }
+
+    h3 {
+      color: vars.$bmi-gunmetal;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 110%; /* 52.8px */
+      letter-spacing: -2.4px;
+      margin-bottom: 35px;
+
+      @media #{vars.$narrow} {
+        font-size: 32px;
+        margin-bottom: 32px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      padding-bottom: 35px;
+      color: vars.$bmi-dark-electri-blue;
+
+      @media #{vars.$narrow} {
+        padding-bottom: 71.6px;
+      }
+    }
+  }
+}

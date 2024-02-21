@@ -1,0 +1,25 @@
+@use "@/styles/vars.scss";
+
+.main {
+  background-color: white;
+  padding: 40px;
+
+  @media #{vars.$medium} {
+    padding: 0;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0;
+  }
+
+  * {
+    font-family: "Libre Baskerville", serif;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 $width-threshold: 1023px;
-$narrow: "(max-width: #{$width-threshold})";
+$narrow: "(max-width: 480px)";
+$medium: "(max-width: 768px)";
 $wide: "(min-width: #{$width-threshold + 1})";
 
 $font-outfit: "Outfit", sans-serif;
 $font-young-serif: "Young Serif", serif;
+$font-inter: "Inter", sans-serif;
 
 $color-white: hsl(0, 0%, 100%);
 $recipe-rose-white: hsl(330, 100%, 98%);
@@ -15,3 +19,8 @@ $recipe-wenge-brown: hsl(30, 10%, 34%);
 $recipe-dark-charcoal: hsl(24, 5%, 18%);
 $recipe-dark-raspberry: #7a284e;
 $recipe-brandy-red: #854632;
+
+$bmi-blue: #345ff6;
+$bmi-gunmetal: #253347;
+$bmi-dark-electri-blue: #5e6e85;
+$bmi-border: #d8e2e7;

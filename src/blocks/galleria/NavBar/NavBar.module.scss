@@ -1,0 +1,41 @@
+@use "@/styles/vars.scss";
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 40px;
+  border-bottom: solid 1px #e5e5e5;
+
+  @media #{vars.$medium} {
+    padding: 27px 40px;
+  }
+
+  @media #{vars.$narrow} {
+    padding: 24px;
+  }
+
+  svg {
+    width: 170px;
+    height: 48px;
+
+    @media #{vars.$medium} {
+      width: 113px;
+      height: 32px;
+    }
+  }
+
+  button {
+    color: #7d7d7d;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    letter-spacing: 2.571px;
+    font-size: 12px;
+    cursor: pointer;
+
+    @media (max-width: 375px) {
+      font-size: 9px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@use "@/styles/vars.scss";
+
+.main {
+  margin: 96px 24px 120px 24px;
+  border-radius: 35px;
+  padding: 72px 116px 96px 116px;
+  position: relative;
+  background: linear-gradient(
+    290deg,
+    rgba(214, 230, 254, 0.25) 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  display: flex;
+  gap: 32px;
+
+  @media #{vars.$narrow} {
+    margin: 0 0 96px 0;
+    border-radius: 0;
+    padding: 60px 43px 60px 39px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__card {
+    flex: 1;
+
+    @media #{vars.$narrow} {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: space-between;
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 45px;
+
+      @media #{vars.$narrow} {
+        margin-bottom: 32px;
+      }
+    }
+
+    h4 {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -1.2px;
+      color: vars.$bmi-gunmetal;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      color: vars.$bmi-dark-electri-blue;
+      line-height: 150%; /* 24px */
+    }
+  }
+}
