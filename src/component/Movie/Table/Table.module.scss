@@ -1,0 +1,21 @@
+@use "@/styles/vars.scss";
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 15px;
+
+  @media #{vars.$tablet} {
+    gap: 24px 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media #{vars.$desktop} {
+    gap: 32px 40px;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+  }
+
+  @media #{vars.$large} {
+    grid-template-columns: repeat(5, minmax(280px, 1fr));
+  }
+}

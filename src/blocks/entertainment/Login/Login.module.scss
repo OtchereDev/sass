@@ -1,0 +1,98 @@
+@use "@/styles/vars.scss";
+
+.main {
+  padding: 48px 24px;
+  font-family: "Outfit", sans-serif;
+
+  @media #{vars.$tablet} {
+    padding: 80px 24px;
+  }
+
+  &__logo {
+    margin: 0 auto 59px;
+    display: block;
+    width: 32px;
+    height: 25.6px;
+
+    @media #{vars.$tablet} {
+      margin: 0 auto 73px;
+    }
+
+    @media #{vars.$tablet} {
+      margin: 0 auto 83px;
+    }
+  }
+
+  &__container {
+    padding: 24px;
+    border-radius: 6px;
+    background: vars.$entertainment-dark-blue;
+
+    @media #{vars.$tablet} {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: white;
+    margin: 0 0 40px;
+  }
+
+  &__input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid vars.$entertainment-light-blue;
+    padding: 0 16px 16px 16px;
+    outline: none;
+    font-size: 15px;
+    color: white;
+
+    &::placeholder {
+      opacity: 0.5;
+      color: white;
+      font-family: "Outfit", sans-serif;
+    }
+
+    &_error {
+      border-bottom: 1px solid vars.$entertainment-red;
+    }
+  }
+
+  &__password {
+    margin: 24px 0 0;
+  }
+
+  &__button {
+    color: white;
+    background: vars.$entertainment-red;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin: 40px 0 0;
+    cursor: pointer;
+
+    &:hover {
+      background: white;
+      color: vars.$entertainment-dark-blue;
+    }
+  }
+
+  &__cta {
+    margin: 24px 0 0 8px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+
+    span {
+      color: vars.$entertainment-red;
+      cursor: pointer;
+    }
+  }
+}

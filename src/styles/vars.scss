@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap");
 
 $width-threshold: 1023px;
 $narrow: "(max-width: 480px)";
 $medium: "(max-width: 768px)";
 $wide: "(min-width: #{$width-threshold + 1})";
+
+$tablet: "only screen and (min-width: 400px)";
+$desktop: "only screen and (min-width: 960px)";
+$large: "only screen and (min-width: 1440px)";
 
 $font-outfit: "Outfit", sans-serif;
 $font-young-serif: "Young Serif", serif;
@@ -24,3 +29,9 @@ $bmi-blue: #345ff6;
 $bmi-gunmetal: #253347;
 $bmi-dark-electri-blue: #5e6e85;
 $bmi-border: #d8e2e7;
+
+$entertainment-red: #fc4747;
+$entertainment-black: #10141e;
+$entertainment-light-blue: #5a698f;
+$entertainment-dark-blue: #161d2f;
+$entertainment-white: #fff;

@@ -1,0 +1,36 @@
+@use "@/styles/vars.scss";
+
+.main {
+  background: vars.$entertainment-black;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+.movies {
+  position: relative;
+
+  @media #{vars.$tablet} {
+    padding: 25px 0 25px 25px;
+  }
+
+  @media #{vars.$desktop} {
+    padding: 32px 0 32px 32px;
+    display: flex;
+    gap: 36px;
+  }
+
+  &__content {
+    padding: 24px 0px 24px 16px;
+
+    @media #{vars.$tablet} {
+      padding: 34px 0 0;
+    }
+
+    @media #{vars.$desktop} {
+      width: calc(100% - 128px);
+      margin-left: auto;
+    }
+  }
+}

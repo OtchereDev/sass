@@ -1,0 +1,97 @@
+@use "@/styles/vars.scss";
+
+.main {
+  @media #{vars.$tablet} {
+    padding: 0 25px 0 0;
+  }
+
+  @media #{vars.$desktop} {
+    padding: 0;
+    max-height: calc(100vh - 64px);
+    position: fixed;
+    height: 100%;
+  }
+
+  &__content {
+    background: vars.$entertainment-dark-blue;
+    padding: 18px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{vars.$tablet} {
+      border-radius: 10px;
+      padding: 24px 16px 24px 24px;
+    }
+
+    @media #{vars.$desktop} {
+      display: block;
+      position: relative;
+      height: 100%;
+      padding: 35px 32px 32px 32px;
+    }
+  }
+
+  &__logo {
+    width: 25px;
+    height: 20px;
+
+    @media #{vars.$tablet} {
+      width: 32px;
+      height: 25.6px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media #{vars.$tablet} {
+      gap: 32px;
+    }
+
+    @media #{vars.$desktop} {
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 74px;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: #5a698f;
+      cursor: pointer;
+
+      &:hover {
+        fill: vars.$entertainment-red;
+      }
+
+      @media #{vars.$tablet} {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__active {
+    fill: white !important;
+  }
+
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    @media #{vars.$tablet} {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media #{vars.$desktop} {
+      position: absolute;
+      bottom: 32px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "@/styles/vars.scss";
+
+.main {
+  padding: 24px 16px 0 0;
+
+  @media #{vars.$tablet} {
+    padding: 33px 25px 0 0;
+  }
+
+  @media #{vars.$tablet} {
+    padding: 34px 32px 0 0;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 24px;
+
+    @media #{vars.$tablet} {
+      font-size: 32px;
+    }
+  }
+}
