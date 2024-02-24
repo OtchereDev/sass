@@ -20,7 +20,7 @@ function Recommendation({
 
       <Table>
         {movies.map((item) => (
-          <Card item={item} />
+          <Card key={item.title} item={item} />
         ))}
       </Table>
     </section>

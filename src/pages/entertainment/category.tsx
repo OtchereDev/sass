@@ -10,7 +10,7 @@ import Trending from "@/blocks/entertainment/Trending/Trending";
 import Search from "@/component/Movie/Search/Search";
 import Recommendation from "@/blocks/entertainment/Recommendation/Recommendation";
 
-function movies() {
+function Movies() {
   const [search, setSearch] = useState("");
   const [filterMovies, setFilterMovies] = useState<any[]>([]);
 
@@ -51,4 +51,4 @@ function movies() {
   );
 }
 
-export default movies;
+export default Movies;

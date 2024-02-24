@@ -4,13 +4,13 @@ import styles from "./Search.module.scss";
 
 import SearchIcon from "@/assets/entertainment-web-app/icon-search.svg";
 
-function Search({ onSearch }: { onSearch: (text: string) => void }) {
+function Search({ onSearch }: { onSearch?: (text: string) => void }) {
   const [search, setSearch] = useState("");
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        onSearch(search);
+        onSearch && onSearch(search);
       }}
       className={styles.main}
     >

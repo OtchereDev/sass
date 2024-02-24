@@ -20,7 +20,7 @@ function Login() {
         <button className={styles.main__button}>Login to your account</button>
 
         <p className={styles.main__cta}>
-          Don't have an account <span>Sign Up</span>
+          Don&apos;t have an account <span>Sign Up</span>
         </p>
       </div>
     </section>

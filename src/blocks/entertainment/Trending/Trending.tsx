@@ -14,7 +14,7 @@ function Trending() {
       <h2 className={styles.main__title}>Trending</h2>
       <div className={styles.main__slider}>
         {movies.map((item) => (
-          <div className={styles.card}>
+          <div key={item.title} className={styles.card}>
             <Image
               fill
               src={item.thumbnail.trending?.large as string}
